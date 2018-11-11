@@ -1,0 +1,68 @@
+b 39
+sw $ra 0 $sp
+sw $s0 -1 $sp
+addi $sp -2
+compi $s0 0
+add $s0 $a0
+compi $t0 0
+add $t0 $a1
+addi $t0 -1
+compi $t1 0
+comp $t7 $t0
+add $t7 $t1
+bns 23
+compi $t2 0
+comp $t7 $t1
+add $t0 $t7
+comp $t7 $t0
+add $t7 $t2
+bns 14
+compi $t3 0
+add $t3 $s0
+add $t3 $t2
+compi $t4 -1
+add $t4 $t3
+lw $t5 0 $t3
+lw $t6 0 $t4
+comp $t7 $t5
+add $t7 $t6
+bns 2
+sw $t6 0 $t3
+sw $t5 0 $t4
+addi $t2 1
+b -17
+add $t0 $t1
+addi $t1 1
+b -26
+addi $sp 2
+lw $s0 -1 $sp
+lw $ra 0 $sp
+ret
+compi $sp -31
+compi $s0 0
+compi $t0 -5
+sw $t0 0 $s0
+compi $t0 -4
+sw $t0 1 $s0
+compi $t0 -3
+sw $t0 2 $s0
+compi $t0 -2
+sw $t0 3 $s0
+compi $t0 -1
+sw $t0 4 $s0
+compi $s1 -5
+compi $a0 0
+add $a0 $s0
+compi $a1 0
+add $a1 $s1
+call -57
+compi $t1 0
+comp $t7 $s1
+add $t7 $t1
+bns 5
+lw $t0 0 $s0
+addi $t0 0			#DISPLAY COMMAND
+addi $s0 1
+addi $t1 1
+b -8
+end

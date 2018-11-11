@@ -1,0 +1,25 @@
+# Generated IO constraints 
+INST "singlecyclecpu" KEEP_HIERARCHY=TRUE;
+NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clock" LOC = P191;
+NET "reset" LOC = P190;
+NET "display[0]" LOC = P139;
+NET "display[1]" LOC = P140;
+NET "display[2]" LOC = P137;
+NET "display[3]" LOC = P138;
+NET "display[4]" LOC = P133;
+NET "display[5]" LOC = P135;
+NET "display[6]" LOC = P131;
+NET "display[7]" LOC = P132;
+
+# Generated physical constraints 
+NET "clock" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "display[7]" IOSTANDARD = LVCMOS33;
+NET "display[6]" IOSTANDARD = LVCMOS33;
+NET "display[5]" IOSTANDARD = LVCMOS33;
+NET "display[4]" IOSTANDARD = LVCMOS33;
+NET "display[3]" IOSTANDARD = LVCMOS33;
+NET "display[2]" IOSTANDARD = LVCMOS33;
+NET "display[1]" IOSTANDARD = LVCMOS33;
+NET "display[0]" IOSTANDARD = LVCMOS33;
